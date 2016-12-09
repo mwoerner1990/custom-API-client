@@ -1,0 +1,9 @@
+<h1> Automobile Info </h1>
+
+<% @autos.each do |auto| %>
+<h1>MODEL: <a href="/autos/<%=auto["id"]%>"><%= auto["name"] %></a></h1>
+<h2>MAKE: <%= auto["manufacturer"] %></h2>
+<p>HP: <%= auto["horsepower"] %></p>
+<p>TORQUE: <%= auto["torque"] %></p>
+<h5>ID: <%= auto["id"] %></h5>
+<% end %>
